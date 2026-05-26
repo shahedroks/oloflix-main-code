@@ -30,7 +30,7 @@ class _FullScreenPlayerState extends ConsumerState<FullScreenPlayer> {
   bool _canSkipAd = false;
   int _currentAdIndex = -1;
   Timer? _skipCountdownTimer;
-  int _skipCountdown = 5;
+  int _skipCountdown = 35;
 
   @override
   void initState() {
@@ -130,7 +130,7 @@ class _FullScreenPlayerState extends ConsumerState<FullScreenPlayer> {
       _isPlayingAd = true;
       _canSkipAd = false;
       _currentAdIndex = adIndex;
-      _skipCountdown = 5;
+      _skipCountdown = 35;
     });
 
     // Start countdown timer
@@ -203,7 +203,7 @@ class _FullScreenPlayerState extends ConsumerState<FullScreenPlayer> {
       _isPlayingAd = false;
       _canSkipAd = false;
       _currentAdIndex = -1;
-      _skipCountdown = 5;
+      _skipCountdown = 35;
     });
 
     // Resume main video
