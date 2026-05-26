@@ -40,7 +40,7 @@ class _VideoShowWithAdsScreenState extends ConsumerState<VideoShowWithAdsScreen>
   int _adStartTime = 0;
   int _currentAdIndex = -1;
   Timer? _skipCountdownTimer;
-  int _skipCountdown = 5;
+  int _skipCountdown = 35;
 
   @override
   void initState() {
@@ -185,7 +185,7 @@ class _VideoShowWithAdsScreenState extends ConsumerState<VideoShowWithAdsScreen>
       _canSkipAd = false;
       _currentAdIndex = adIndex;
       _adStartTime = DateTime.now().millisecondsSinceEpoch;
-      _skipCountdown = 5;
+      _skipCountdown = 35;
     });
 
     // Start countdown timer
@@ -309,7 +309,7 @@ class _VideoShowWithAdsScreenState extends ConsumerState<VideoShowWithAdsScreen>
       _canSkipAd = false;
       _currentAdIndex = adIndex;
       _adStartTime = DateTime.now().millisecondsSinceEpoch;
-      _skipCountdown = 5;
+      _skipCountdown = 35;
     });
 
     // Start countdown timer
@@ -395,7 +395,7 @@ class _VideoShowWithAdsScreenState extends ConsumerState<VideoShowWithAdsScreen>
       _isPlayingAd = false;
       _canSkipAd = false;
       _currentAdIndex = -1;
-      _skipCountdown = 5;
+      _skipCountdown = 35;
     });
 
     // Resume main video
